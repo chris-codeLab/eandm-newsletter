@@ -1,0 +1,790 @@
+﻿<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- UPDATE THE TITLE TAG BELOW TO CHANGE WHAT APPEARS IN BROWSER TAB DESCRIPTION  -->
+    <title>EandM 2023 Newsletter</title>
+    <!-- <link href="emstyles.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Montserrat:wght@300&display=swap');
+    * {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1276px;
+  min-width: 320px;
+  margin: 12px;
+  background: #fff;
+}
+
+#header {
+  /* background-color: #0092a4; */
+  background-color: #4b9ca7;
+  width: 100%;
+  height: 180px;
+  border-bottom: 10px solid #fff;
+}
+
+
+    .hover {
+  --c:linear-gradient(#b6b6b6 0 0); /* update the color here */
+  
+  padding-bottom: 10px;
+  background: var(--c), var(--c);
+  background-size: 2.9em 1.9em;
+  background-position:43% 100%;
+  background-repeat: no-repeat;
+  transition: .9s linear, background-size .6s .3s linear;
+}
+.hover:hover {
+  background-size: 40% .2em;
+  background-position: 0.1% 90%, 90% 100%;
+  margin-left: -10px !important;
+}
+
+@media (max-width: 601px) {
+  .boxText {
+    order: 2 !important;
+    max-width: 300px !important;
+    margin-top: -30px !important;
+  }
+
+  #logo {
+    left: 25% !important;
+    max-width: 250px;
+    max-height: 225px;
+    width: calc(100vw / 3);
+  }
+
+  .footer {
+    margin-right: 15px !important;
+  }
+
+  #messaging {
+    font-size: 24px !important;
+    padding-right: 15px !important;
+  }
+
+  .boxText > h3 {
+    font-size: 20px !important;
+    max-width: 98% !important;
+    padding-right: 8px !important;
+    margin-left: -24px;
+  }
+
+  .iconSocial {
+align-items: center !important;
+justify-content: center;
+margin-top: 5px;
+padding-left: 20px !important;
+padding-right: 40px !important;
+}
+
+  .watchText {
+    margin-top: 27px !important;
+    font-size: 24px !important;
+    padding-left: 1px !important;
+    margin-left: -24px;
+  }
+
+  .boxImage {
+    order: 1 !important;
+    width: calc(100% - 57px) !important;
+    padding-top:20px;
+    left: -40px !important;
+  }
+
+  .boxSection {
+    flex-direction: column !important;
+    max-height: 700px !important;
+    margin-left: 20px !important;
+    flex-wrap: nowrap !important;
+    width: calc(100% - -47px) !important;
+  }
+
+  .flexLine,
+.flexLine2 {
+    visibility: hidden !important;
+    max-width: 10px !important;
+  }
+
+  .sectionLower {
+    height: 700px !important;
+  }
+
+  .titleBox {
+    margin-left: 20px !important;
+    width: 100% !important;
+    max-width: calc(100% - 20px) !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .titleBox > h2 {
+    margin-left: 1px !important;
+    width: 100% !important;
+    margin-top: 9px !important;
+    font-size: 28px !important;
+  }
+
+  .sectionTitle {
+    font-size: 21px !important;
+  }
+
+  .sectionText {
+    font-size: 24px !important;
+  }
+}
+@media (min-width:600px ) {
+  .sectionLower {
+    height: 700px !important;
+  }
+
+  .boxText {
+    order: 1 !important;
+    max-width: calc(100vw - 231px);
+    margin-top: -5px !important;
+  }
+
+  .boxImage img {
+  width: calc(100vw - 20px);
+  max-width: 900px;
+  min-width: calc(100vw - 400px);
+  max-height: 420px;
+}
+
+.boxImage {
+  max-width: 95vw;
+  min-width: 100%;
+  border-radius: 20px;
+  flex: 1;
+  order: 2;
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+  .boxSection {
+    max-width: 650px !important;
+  }
+}
+@media (min-width:898px ) {
+  .sectionLower {
+    height: 450px !important;
+  }
+}
+@media (min-width:1025px ) {
+  .boxSection {
+    max-width: fit-content !important;
+  }
+}
+
+
+
+
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+
+  95% {
+    left: 100%;
+  }
+
+  98% {
+    left: 100%;
+  }
+
+  99% {
+    left: 0;
+  }
+}
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  98% {
+    left: -300%;
+  }
+
+  99% {
+    left: 0;
+  }
+}
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+
+  97% {
+    scroll-snap-align: none;
+  }
+
+  99% {
+    scroll-snap-align: none;
+  }
+
+  100% {
+    scroll-snap-align: center;
+  }
+}
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+</style>
+</head>
+
+<!-- IMAGES ASSETS ARE ALL LOCATED HERE: "\\vsvr-www\Media\EandM\images\Email\Newsletter2023" 
+     I HAVE LINKED ALL THE IMAGES TO THEIR PLACEHOLDERS ON THE SERVER, THEY WILL NEED TO BE REPLACED WITH PUBLICALLY AVAILABLE URLS BEFORE SENDING-->
+
+    <body style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; font-family: 'Barlow', sans-serif; max-width: 1368px; min-width: 500px; margin: 12px; background: #fff;">
+        <div id="container" class style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+            <div id="header" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #4b9ca7; width: 100%; height: 180px; border-bottom: 10px solid #fff;">
+                <div id="logo" class="logo animate__animated animate__jackInTheBox" 
+                style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; display: flex; align-items: center; justify-content: center; margin-top: 50px; left: calc(50% - 150px); z-index: 25; padding: 10px 10px; width: 250px; height: 225px; background-color: #fff; -webkit-transition: all 0.6s ease-in-out; 
+                max-width: 250px; max-height: 240px;-moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;">
+                
+<!-- UPDATE LOGO IMAGE \\vsvr-www\Media\EandM\images\Email\Newsletter2023\emLogo.jpg-->
+                <img 
+                src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/9bba07c0-8935-4e7d-a2e0-8c0baf40cc33/1800x1599.jpg" 
+                alt="EandM Logo Image" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: 100%;">
+            </div>
+        </div>
+        <div id="emailContent" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #cccccc; width: 100%; height: 100%; position: relative; border: 1px solif #919191;">
+            <div id="message" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #111a19; padding-top: 120px; padding-left: 50px;">
+               
+<!-- ADDD RECIPIENT INFORMATION HERE -->
+                <h1 id="recipient" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; font-size: 40px; padding-top: 10px;">Hi %Name%,</h1>
+                 
+<!-- ADDD MESSAGE INFORMATION HERE -->
+                <p id="messaging" style="padding-right: 20px; box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; font-size: 36px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies
+                    tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Donec auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget aliquam
+                    nisl ni. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies
+                    tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni.
+                </p>
+            </div>
+
+<!-- ADD ARTICLE BOX 1 INFORMATION HERE -->  
+            <div class="section" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                <div class="titleBox" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #4b9ca7; width: 550px; height: 60px; border-radius: 20px; margin-left: 50px; margin-top: 80px; display: inline-block; z-index: 130; position: relative;">
+
+<!-- ADD ARTICLE BOX 1 TITLE HERE -->                      
+                    <h2 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #000; font-size: 36px; padding-top: 1px; padding-left: 20px; margin-top: 4px;">Motoman for Pick and Place</h2>
+                </div>              
+                <div id="box1" class="boxSection" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #fff; display: flex; width: fit-content; overflow: hidden; border-radius: 20px; margin-left: 50px; margin-top: -35px; z-index: 1; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                    <div class="boxText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-top: 10px; padding: 20px; min-width: 500px; max-width: 550px; width: 100%; font-size: 24px; flex: 1; order: 2;">
+
+<!-- ADD ARTICLE BOX 1 DESCRIPTION HERE -->                          
+                        <h3 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies
+                            tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Donec auctor, nisl eget ultricies tincidunt, nisl nisl aliquam
+                            nisl, eget
+                            aliquam.
+                        </h3>
+
+<!-- ADD ARTICLE BOX 1 LINK TO EXTERNAL ARTICLE BELOW WHERE THE # SIGN IS -->                          
+                        <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                            <h2 class="watchText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #185481;">Watch the video to learn more.</h2>
+                        </a>
+                    </div>
+                    <div class="boxImage" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; max-width: 660px; min-width: 450px; border-radius: 20px; flex: 1; order: 2; display: flex; z-index: 1; position: relative;">
+
+<!-- ADD ARTICLE BOX 1 IMAGE HERE UNDER THE src attribute AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM -->                          
+                        <img class="animate__animated animate__bounceInDown" 
+                        src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/db9fc0f4-cc3d-45a1-b760-7eb0d87682de/697x502.png" 
+                        alt="Box 1 Image" 
+                        style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: 100%;">
+                    </div>
+                </div>
+
+
+<!-- ADD ARTICLE BOX 2 INFORMATION HERE -->
+                <div class="section" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                    <div class="titleBox" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #4b9ca7; width: 550px; height: 60px; border-radius: 20px; margin-left: 50px; margin-top: 80px; display: inline-block; z-index: 130; position: relative;">
+<!-- ADD ARTICLE BOX 2 TITLE HERE -->                              
+                        <h2 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #000; font-size: 36px; padding-top: 1px; padding-left: 20px; margin-top: 4px;">Introducing the Soft Gripper</h2>
+                    </div>
+                    <div id="box2" class="boxSection" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #fff; display: flex; width: fit-content; overflow: hidden; border-radius: 20px; margin-left: 50px; margin-top: -35px; z-index: 1; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                        <div class="boxText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-top: 10px; padding: 20px; min-width: 500px; max-width: 550px; width: 100%; font-size: 24px; flex: 1; order: 2;">
+<!-- ADD ARTICLE BOX 2 DESCRIPTION HERE -->
+                            <h3 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget
+                                ultricies
+                                tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Donec auctor, nisl eget ultricies tincidunt, nisl nisl
+                                aliquam nisl, eget
+                                aliquam.
+                            </h3>
+<!-- ADD ARTICLE BOX 2 LINK TO EXTERNAL ARTICLE BELOW WHERE THE # SIGN IS -->
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <h2 class="watchText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #185481;">Watch the video to learn more.</h2>
+                            </a>
+                        </div>
+                        <div class="boxImage" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; max-width: 660px; min-width: 450px; border-radius: 20px; flex: 1; order: 2; display: flex; z-index: 1; position: relative;">
+<!-- ADD ARTICLE BOX 2 IMAGE HERE UNDER THE src attribute  AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM-->                           
+                            <img 
+                            src="https://roboticsandautomationnews.com/wp-content/uploads/2021/01/festo-octopus-gripper.jpg" 
+                            alt="Box 1 Image" 
+                            style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- ADD ARTICLE BOX 3 INFORMATION HERE -->
+                <div class="section" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                    <div class="titleBox" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #4b9ca7; width: 550px; height: 60px; border-radius: 20px; margin-left: 50px; margin-top: 80px; display: inline-block; z-index: 130; position: relative;">
+<!-- ADD ARTICLE BOX 3 TITLE HERE -->                        
+                        <h2 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #000; font-size: 36px; padding-top: 1px; padding-left: 20px; margin-top: 4px;">Motoman for Pick and Place</h2>
+                    </div>
+                    <div id="box3" class="boxSection" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #fff; display: flex; width: fit-content; overflow: hidden; border-radius: 20px; margin-left: 50px; margin-top: -35px; z-index: 1; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                        <div class="boxText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-top: 10px; padding: 20px; min-width: 500px; max-width: 550px; width: 100%; font-size: 24px; flex: 1; order: 2;">
+<!-- ADD ARTICLE BOX 3 DESCRIPTION HERE -->
+                            <h3 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget
+                                ultricies
+                                tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Donec auctor, nisl eget ultricies tincidunt, nisl nisl
+                                aliquam nisl, eget
+                                aliquam.
+                            </h3>
+<!-- ADD ARTICLE BOX 3 LINK TO EXTERNAL ARTICLE BELOW WHERE THE # SIGN IS -->
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <h2 class="watchText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #185481;">Watch the video to learn more.</h2>
+                            </a>
+                        </div>
+                        <div class="boxImage" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; max-width: 660px; min-width: 450px; border-radius: 20px; flex: 1; order: 2; display: flex; z-index: 1; position: relative;">
+<!-- ADD ARTICLE BOX 3 IMAGE HERE UNDER THE src attribute  AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM-->                            
+                            <img 
+                            src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/64e0761b-66e9-4d99-a697-ef27f3a11b76/660x475.png" 
+                            alt="Box 1 Image" 
+                            style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+
+<!-- ADD ARTICLE BOX 4 INFORMATION HERE -->
+                <div class="section" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                    <div class="titleBox" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #4b9ca7; width: 550px; height: 60px; border-radius: 20px; margin-left: 50px; margin-top: 80px; display: inline-block; z-index: 130; position: relative;">
+<!-- ADD ARTICLE BOX 4 TITLE HERE -->
+                        <h2 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #000; font-size: 36px; padding-top: 1px; padding-left: 20px; margin-top: 4px;">Introducing the Soft Gripper</h2>
+                    </div>
+                    <div id="box4" class="boxSection" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #fff; display: flex; width: fit-content; overflow: hidden; border-radius: 20px; margin-left: 50px; margin-top: -35px; z-index: 1; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                        <div class="boxText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-top: 10px; padding: 20px; min-width: 500px; max-width: 550px; width: 100%; font-size: 24px; flex: 1; order: 2;">
+<!-- ADD ARTICLE BOX 4 DESCRIPTION HERE -->
+                            <h3 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget
+                                ultricies
+                                tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Donec auctor, nisl eget ultricies tincidunt, nisl nisl
+                                aliquam nisl, eget
+                                aliquam.
+                            </h3>
+<!-- ADD ARTICLE BOX 4 LINK TO EXTERNAL ARTICLE BELOW WHERE THE # SIGN IS -->
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <h2 class="watchText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #185481;">Watch the video to learn more.</h2>
+                            </a>
+                        </div>
+                        <div class="boxImage" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; max-width: 660px; min-width: 450px; border-radius: 20px; flex: 1; order: 2; display: flex; z-index: 1; position: relative;">
+<!-- ADD ARTICLE BOX 4 IMAGE HERE UNDER THE src attribute  AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM-->                           
+                            <img 
+                            src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/407af19e-5462-4b92-a782-8048555ca649/700x500.png"
+                            alt="Soft Gripper Image" 
+                            style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionMiddle" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-image: url('http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/da2dc752-e5ce-4e8a-ab16-220616ca5ff2/1552x1298.png'); width: 100%; margin-top: 100px; border-bottom: #fff 15px solid;">
+                    <div class="sectionTitle" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; font-size: 30px; color: #00444d; padding-top: 20px; font-weight: 800; padding-left: 30px; margin-top: -48px; padding-right: 5px;">
+                        <h1 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">What's happenin' at EandM</h1>
+                    </div>
+                    <div class="sectionText" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; font-size: 34px; color: #202020; padding-top: 20px; padding-left: 30px; margin-top: -68px; padding-bottom: 60px;">
+
+<!-- ADD WHATS HAPPENING AT EANDM ARTICLE INFORMATION BELOW-->                        
+                        <p style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies
+                            tincidunt, nisl nisl aliquam nisl, eget aliquam nisl ni. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Donec auctor, nisl eget ultricies tincidunt, nisl nisl aliquam
+                            nisl, eget
+                            aliquam.</p>
+
+<!-- CAROUSEL SLIDES -->                              
+                            <section class="carousel" aria-label="Gallery" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: relative; padding-top: 70%; filter: drop-shadow(0 0 10px #0003); perspective: 100px; margin-right: 29px;">
+<!-- IF YOU WANT JUST ONE SINGLE IMAGE UNCOMMENT THE IMG ELEMENT BELOW AND THEN COMMENT OUT EVERYTHING ELSE UNTIL YOU REACH THE CLOSING </section> TAG -->
+                                <!-- <img id="banner" 
+                                src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/029ac8f9-929c-4c77-86e3-e708a8cf8e30/700x467.png" 
+                                alt="Team Photo" 
+                                style="box-sizing: border-box; width: calc(100% - 50px);">     -->
+
+                                <ol class="carousel__viewport" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; overflow-x: scroll; counter-reset: item; scroll-behavior: smooth; scroll-snap-type: x mandatory; max-height: 800px;">       
+<!-- CAROUSEL SLIDE 1 -->  
+                                <li id="carousel__slide1" tabindex="0" class="carousel__slide" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; position: relative; flex: 0 0 100%; width: 100%; background-color: rgba(255, 255, 255, 0); counter-increment: item;">
+                                    <div class="carousel__snapper" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; scroll-snap-align: center;">
+<!-- TO CHANGE IMAGES IN CAROUSEL EDIT src URL BELOW  AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM-->      
+                                        <img id="banner" 
+                                        src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/029ac8f9-929c-4c77-86e3-e708a8cf8e30/700x467.png" 
+                                        alt="Team Photo" 
+                                        style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: calc(100%);">
+                                    </div>
+                                      <a href="#carousel__slide4" class="carousel__prev" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; left: -1rem;">Go to last slide</a>
+                                      <a href="#carousel__slide2" class="carousel__next" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; right: -1rem;">Go to next slide</a>
+                                  </li>
+
+<!-- CAROUSEL SLIDE 2 -->
+                                  <li id="carousel__slide2" tabindex="0" class="carousel__slide" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; position: relative; flex: 0 0 100%; width: 100%; counter-increment: item; background-color: rgba(233, 233, 233, 0);">
+                                    <div class="carousel__snapper" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; scroll-snap-align: center;">
+<!-- TO CHANGE IMAGES IN CAROUSEL EDIT src URL BELOW  AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM-->                                        
+                                        <img id="banner" 
+                                        src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/2c2a5e9d-11ef-4844-a174-9bab7618db5b/700x467.png" 
+                                        alt="Team Photo" 
+                                        style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: calc(100%);">
+                                    </div>
+                                    <a href="#carousel__slide1" class="carousel__prev" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; left: -1rem;">Go to previous slide</a>
+                                    <a href="#carousel__slide3" class="carousel__next" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; right: -1rem;">Go to next slide</a>
+                                  </li>
+
+<!-- CAROUSEL SLIDE 3 -->
+                                  <li id="carousel__slide3" tabindex="0" class="carousel__slide" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; position: relative; flex: 0 0 100%; width: 100%; background-color: rgba(255, 255, 255, 0); counter-increment: item;">
+                                    <div class="carousel__snapper" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; scroll-snap-align: center;">
+<!-- TO CHANGE IMAGES IN CAROUSEL EDIT src URL BELOW  AND UPDATE THE "alt" TAG, A SHORT DESCRIPTION OF WHAT THE IMAGE IS, THIS WILL HELP ENSURE THE EMAIL IS NOT MARKED AS SPAM-->
+                                        <img id="banner" 
+                                        src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/f93761ea-96ac-42ee-9074-cfb021998182/700x467.png" 
+                                        alt="Team Photo" 
+                                        style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: calc(100%);">
+                                    </div>
+                                    <a href="#carousel__slide2" class="carousel__prev" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; left: -1rem;">Go to previous slide</a>
+                                    <a href="#carousel__slide4" class="carousel__next" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; right: -1rem;">Go to next slide</a>
+                                  </li>
+
+<!-- CAROUSEL SLIDE 4 -->
+                                  <li id="carousel__slide4" tabindex="0" class="carousel__slide" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; position: relative; flex: 0 0 100%; width: 100%; counter-increment: item; background-color: rgba(233, 233, 233, 0);">
+                                    <div class="carousel__snapper" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; scroll-snap-align: center;">
+                                        <img id="banner" src="http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/d01a86d9-90c5-45a4-8a34-036715d06b82/612x408.jpg" alt="Team Photo" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: calc(100%);">
+                                    </div>
+                                    <a href="#carousel__slide3" class="carousel__prev" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; left: -1rem;">Go to previous slide</a>
+                                    <a href="#carousel__slide1" class="carousel__next" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; position: absolute; top: 0; margin-top: 37.5%; width: 4rem; height: 4rem; transform: translateY(-50%); border-radius: 50%; font-size: 0; outline: 0; right: -1rem;">Go to first slide</a>
+                                  </li>
+
+                                </ol>
+
+<!--CAROUSEL NAVIGATION DOTS TO HIDE PLEASE COMMENT OUT EVERYTHING FROM <aside> TO </aside>-->
+                                <aside class="carousel__navigation" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; right: 0; bottom: 0; left: 0; text-align: center;">
+                                    <ol class="carousel__navigation-list" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; display: inline-block;">
+                                      <li class="carousel__navigation-item" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; display: inline-block;">
+                                        <a href="#carousel__slide1" class="carousel__navigation-button" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; display: inline-block; width: 1.5rem; height: 1.5rem; background-color: #044685; background-clip: content-box; border: 0.25rem solid transparent; border-radius: 50%; font-size: 0; transition: transform 0.1s;">Go to slide 1</a>
+                                      </li>
+                                      <li class="carousel__navigation-item" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; display: inline-block;">
+                                        <a href="#carousel__slide2" class="carousel__navigation-button" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; display: inline-block; width: 1.5rem; height: 1.5rem; background-color: #044685; background-clip: content-box; border: 0.25rem solid transparent; border-radius: 50%; font-size: 0; transition: transform 0.1s;">Go to slide 2</a>
+                                      </li>
+                                      <li class="carousel__navigation-item" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; display: inline-block;">
+                                        <a href="#carousel__slide3" class="carousel__navigation-button" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; display: inline-block; width: 1.5rem; height: 1.5rem; background-color: #044685; background-clip: content-box; border: 0.25rem solid transparent; border-radius: 50%; font-size: 0; transition: transform 0.1s;">Go to slide 3</a>
+                                      </li>
+                                      <li class="carousel__navigation-item" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; list-style: none; margin: 0; padding: 0; display: inline-block;">
+                                        <a href="#carousel__slide4" class="carousel__navigation-button" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff; display: inline-block; width: 1.5rem; height: 1.5rem; background-color: #044685; background-clip: content-box; border: 0.25rem solid transparent; border-radius: 50%; font-size: 0; transition: transform 0.1s;">Go to slide 4</a>
+                                      </li>
+                                    </ol>
+                                  </aside>
+                        </section>
+                    </div>
+                </div>
+ 
+ <!-- SUPPORT YOU CAN COUNT ON SECTION ON LINE BELOW /*   UPDATE BACKGROUND-IMAGE URL TO PUBLIC URL FOR IMAGE: \\vsvr-www\Media\EandM\images\Email\Newsletter2023\greyBox.png  */ -->
+                <div class="sectionLower" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-image: url('http://cdn.mcauto-images-production.sendgrid.net/5e0f9376ec0a25d4/ed3cb21a-6274-4b1b-82c3-50d3607bdd70/1552x751.png'); width: 100%; height: 100%; min-height: 500px; display: inline-flex; margin-top: 0px; border-bottom: #fff 15px solid; align-items: center;">
+                    <div class="flexSection" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; width: 100%; height: 100%;">
+                        <img class="flexLine" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\grnLine.png" alt="Section seperation line" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; display: inline-flex; margin-top: 60px; right: 0; width: calc(100% / 5);">
+                        <h1 class="titleFlex" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; font-size: 35px; display: inline-flex; margin-top: 40px; left: calc(50% - 200px); color: #00444d;">Support You Can Count On</h1>
+                        <img class="flexLine2" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\grnLine.png" alt="Section seperation line" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; position: absolute; display: inline-flex; margin-top: 60px; width: calc(100% / 5);">
+                        <div class="supportIcons" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: flex; align-items: center; justify-content: center; margin-top: 120px; flex-wrap: wrap;">
+                           
+                            <div id="tech" class="techSupport" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;">
+ <!-- ADD "TECH SUPPORT" LINK AND REPLACE "#" BELOW  -->
+                                <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                    <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\techSupportIcon1.png" alt="Tech Support Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                                </a>
+                            </div>
+                            <div id="quote" class="techSupport" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;">
+  <!--ADD "GET A QUOTE" LINK AND REPLACE "#" BELOW -->
+                                <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                    <img class="iconImage hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\QuoteIcon1.png" alt="Get a quote Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                                </a>
+                            </div>
+                            <div id="acctMan" class="techSupport" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; margin-right: 10px;">
+ <!--ADD "CONTACT ACCOUNT MANAGER" LINK AND REPLACE "#" BELOW-->
+                                <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                    <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\AcctManagerIcon1.png" alt="Account Manager Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                                
+                                </a>
+                            </div>
+                            <div id="videoTuts" class="techSupport" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; -webkit-transition: all 0.6s ease-in-out; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;">
+<!--ADD "VIDEO TUTORIALS" LINK AND REPLACE "#" BELOW-->
+                                <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                    <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\VideoTutsIcon1.png" alt="Video Tutorials Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                                  
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                    </div>
+
+<!--  SOCIAL MEDIA ICON SECTION-->
+                    <div style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: flex; align-items: center; justify-content: center;">
+                        <h1 style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; color: #00444d; font-size: 50px;">866.693.2636</h1>
+                    </div>
+                    <div style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #4b9ca7; height: 300px; border-top: 15px solid #fff; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; align-content: space-around;">
+                        <div class="iconSocial" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; margin-top: 5px; padding-left: 51px;">
+<!--  ADD YOUTUBE CHANNEL URL LINK ICON SECTION IN PLACE OF "#"-->                           
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\youeTube.png" alt="Youtube Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                            </a>
+                        </div>
+                        <div class="iconSocial" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; margin-top: 5px; padding-left: 51px;">
+<!--  ADD LINKEDIN URL LINK ICON SECTION IN PLACE OF "#"-->      
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\linkedinIcon.png" alt="LinkedIn Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                            </a>
+                        </div>
+                        <div class="iconSocial" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; margin-top: 5px; padding-left: 51px;">
+<!--  ADD TWITTER URL LINK ICON SECTION IN PLACE OF "#"--> 
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\facebook.png" alt="Facebook Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                            </a>
+                        </div>
+                        <div class="iconSocial " style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; align-items: center; justify-content: center; margin-top: 5px; padding-left: 51px;">
+<!--  ADD FACEBOOK URL LINK ICON SECTION IN PLACE OF "#"-->                           
+                            <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                                <img class="hvr-buzz-out" src="\\vsvr-www\Media\EandM\images\Email\Newsletter2023\twitterIcon.png" alt="Twitter Icon" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footerSection" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; background-color: #00444d; padding: 20px; color: #fff; display: flex; align-items: center; justify-content: space-evenly; align-content: center; flex-wrap: wrap;">
+<!-- ADD URL TO "FEEDBACK ON THIS EMAIL" LINK IN THE "#" BELOW-->
+                        <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                            <h3 class="footer" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-right: 80px;">Feedback on this email</h3>
+                        </a>
+<!-- ADD URL TO "PRIVACY STATEMENT" LINK IN THE "#" BELOW-->
+                        <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                            <h3 class="footer" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-right: 80px;">Privacy Statement</h3>
+                        </a>
+<!-- ADD URL TO "UNSUBSCRIBE" LINK IN THE "#" BELOW-->
+                        <a href="#" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; text-decoration: none; color: #fff;">
+                            <h3 class="footer" style="box-sizing: border-box; scrollbar-color: transparent transparent; scrollbar-width: 0px; -ms-overflow-style: none; margin-right: 80px;">Unsubscribe</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
